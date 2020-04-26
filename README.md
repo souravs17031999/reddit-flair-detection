@@ -44,7 +44,7 @@ The objectives of this task is divided into five parts :
 
 * April data     
 
-![df2](/images/apr.JPG)        
+![df2](/images/april.JPG)        
 
 ![df2](/images/apr_cloud.JPG)   
 
