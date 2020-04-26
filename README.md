@@ -114,7 +114,8 @@ git clone https://github.com/souravs17031999/reddit-flair-detection
 * Scripts for Flask APP - [WebApp](https://github.com/souravs17031999/reddit-flair-detection/tree/master/reddit_app)   
 * Training Data - [Data](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_india_classifier_combined_data.csv)    
 * Other data for analysing - [OtherData](https://github.com/souravs17031999/reddit-flair-detection/tree/master/Other%20data)     
-* Pre-trained Model - [Model](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_app/model.pkl)     
+* Pre-trained Model - [Model](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_app/model.pkl)       
+* Experiment documented log contains errors and solutions - [logs](https://github.com/souravs17031999/reddit-flair-detection/blob/master/EXPERIMENTAL_LOG.ipynb) 
 
 # Sample of WebApp in action :     
 ![df2](/images/output.gif)         
