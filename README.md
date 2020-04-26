@@ -116,6 +116,6 @@ git clone https://github.com/souravs17031999/reddit-flair-detection
 * Other data for analysing - [OtherData](https://github.com/souravs17031999/reddit-flair-detection/tree/master/Other%20data)     
 * Pre-trained Model - [Model](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_app/model.pkl)     
 
-# Sample runs with outputs :     
-
+# Sample of WebApp in action :     
+![df2](/images/output.gif)         
       
