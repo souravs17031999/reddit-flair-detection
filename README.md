@@ -67,14 +67,21 @@ The objectives of this task is divided into five parts :
 
 * After that analyszed cross validated scores on testing samples :     
 
-![df2](/images/models.JPG)             
+![df2](/images/models.JPG)                
 
-* Now deployment of WEB-APP         
+* Build the webapp and created API for testing on POST request.   
+Ex.  
+```
+files = {'upload_file': open('file.txt','rb')}
+r = requests.post('http://flair-reddit-predict.herokuapp.com/automated_testing', files=files)
+```
+
+* Now deployment of WEB-APP               
 
 ### Real time Flask server hosted on Heroku:      
 * Log on to following URL hosted on pythonanywhere.com using flask server :    
 
-### [LIVE WEBSITE](https://flair-reddit-predict.herokuapp.com/)    
+## [LIVE WEBSITE](https://flair-reddit-predict.herokuapp.com/)    
 
 # Getting started :     
 ### FLASK solution : 
@@ -100,5 +107,15 @@ git clone https://github.com/souravs17031999/reddit-flair-detection
 * Now the local server should start, log on to : [local url port] shown on terminal.     
 (Most probably it will be http://127.0.0.1:5000/ , or maybe any other port)          
 
-# Sample runs with outputs    
+# Navigating Project Directory : 
+* File containing Data collection and building - [Notebook1](https://github.com/souravs17031999/reddit-flair-detection/blob/master/REDDIT_PART_1.ipynb)     
+* File containing EDA - [Notebook2](https://github.com/souravs17031999/reddit-flair-detection/blob/master/REDDIT_PART_2.ipynb)    
+* File containing Modelling - [Notebook3](https://github.com/souravs17031999/reddit-flair-detection/blob/master/REDDIT_PART_3.ipynb)    
+* Scripts for Flask APP - [WebApp](https://github.com/souravs17031999/reddit-flair-detection/tree/master/reddit_app)   
+* Training Data - [Data](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_india_classifier_combined_data.csv)    
+* Other data for analysing - [OtherData](https://github.com/souravs17031999/reddit-flair-detection/tree/master/Other%20data)     
+* Pre-trained Model - [Model](https://github.com/souravs17031999/reddit-flair-detection/blob/master/reddit_app/model.pkl)     
+
+# Sample runs with outputs :     
+
       
