@@ -13,10 +13,18 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 # defining default route
 @app.route('/',methods = ['GET'])
 def hello_world():
+	'''
+	Routing for Home page
+	Methods permitted  : GET
+	'''
 	return render_template('index.html')
 
 @app.route('/reddit', methods = ['GET','POST'])
 def flair_detection():
+	'''
+	Routing Reddit flair detection APP
+	Methods permitted  : GET, POST
+	'''
 	if request.method == 'GET':
 	    return render_template('index_reddit.html')
 
@@ -31,6 +39,10 @@ def flair_detection():
 
 @app.route('/automated_testing', methods = ['GET','POST'])
 def API():
+	'''
+	Routing API Testing endpoint
+	Methods permitted  : GET, POST
+	'''
 	if request.method == 'GET':
 	    return render_template('error_api.html')
 
@@ -45,11 +57,18 @@ def API():
 
 			preds = {}
 			for link in links:
+				if link == '':
+					preds[link] = 'None'
 				preds[link] = detect_flair(link, api=True)[0]
+				
+			return jsonify(preds)
 		else:
 			return jsonify({error : "File not retrived properly !"})
 
 @app.errorhandler(500)
 def page_not_found(e):
+	'''
+	Routing automatic error handling
+	'''
     # note that we set the 500 status explicitly
     return render_template('error_reddit.html', message='INVALID_INPUT_URL : PLEASE ENTER VALID REDDIT URL !'), 500

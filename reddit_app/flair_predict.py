@@ -13,6 +13,16 @@ nltk.download('stopwords')
 import sklearn
 
 def clean_text(text):
+    '''
+    function to preprocess and clean the data before passing the data to model
+
+    parameters :
+        args :
+        text (str) : raw unprocessed text
+
+    returns :
+        text (str) : preprocessed text ready to be passed onto the model pipeline
+    '''
     STOPWORDS = set(stopwords.words('english'))
     text = text.lower()
     text = re.compile('[/(){}\[\]\|@,;]').sub(' ', text)
@@ -21,6 +31,15 @@ def clean_text(text):
     return text
 
 def detect_flair(input_url, api=False):
+    '''
+    main function for getting the predictions back to the flask app
+
+    parameters :
+        args :
+        input_url (str) : url input by the user on the home page
+        api (bool) : boolean value indicating if it an testing endpoint or normal endpoint.
+            Depending on this value, results have to be modified before getting back to the flask app.
+    '''
 
     result = []
 
