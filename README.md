@@ -120,3 +120,5 @@ git clone https://github.com/souravs17031999/reddit-flair-detection
 # Sample of WebApp in action :     
 ![df2](/images/output.gif)         
       
+⭐️ this Project if you liked it !
+
