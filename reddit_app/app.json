@@ -1,5 +1,0 @@
-{
-  "name" : "flair-reddit-predict",
-  "description" : "Reddit flair detection using Machine learning algorithms",
-  "keywords" : ["python", "flask"]
-}
